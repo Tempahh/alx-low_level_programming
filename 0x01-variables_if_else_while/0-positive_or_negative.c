@@ -2,8 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *  main: entry point
- * return : always_sucess 0
+ * main: main block
+ * Description: get a random number and print the number
+ * and if it is positive, negative, or zero
+ * Return: 0
  */
 int main(void)
 {
