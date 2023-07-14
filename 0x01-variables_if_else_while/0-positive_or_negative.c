@@ -1,3 +1,4 @@
+/*this program checks if n is positive, zero or negative*/
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
