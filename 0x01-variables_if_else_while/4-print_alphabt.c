@@ -3,24 +3,19 @@
 #include <stdio.h>
 /**
  * main- main block
- * Description: prints the alphabet in lowercase, then UPPERCASE followed by a new line.
+ * Description: prints the alphabet in lowercase and excludes E and Q followed by a new line.
  * Return: 0
  */
 int main(void)
 {
 char c = 'a';
-char d = 'A';
 while (c <= 'z')
 {
+if (c == 'e' && c == 'q')
+continue;
 putchar(c);
 c++;
 }
-while (d <= 'Z')
-{
-putchar(d);
-d++;
-}
-
 putchar('\n');
 return (0);
 }
