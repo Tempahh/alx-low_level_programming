@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main- main block
- * Description: prints the alphabet in lowercase and excludes E and Q followed by a new line.
+ * Description: prints alphabet in lowercase and excludes E and Q.
  * Return: 0
  */
 int main(void)
