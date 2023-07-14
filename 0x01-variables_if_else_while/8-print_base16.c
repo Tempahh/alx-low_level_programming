@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main- main block
- * Description: prints numbers 0-9
+ * Description: prints numbers within base16
  * Return: 0
  */
 int main(void)
