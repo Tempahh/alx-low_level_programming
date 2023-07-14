@@ -16,8 +16,7 @@ putchar(c + '0');
 }
 for (d = 'a'; d < 'g'; d++)
 {
-putchar(d
-);
+putchar(d);
 }
 putchar('\n');
 return (0);
