@@ -8,14 +8,20 @@
  */
 int main(void)
 {
-int c;
-for (c = 0; c <= 9; c++)
+int a, b, c;
+for (a = 0; a <= 99; a++)
+{
+b = a % 10; /*this fetches single digits*/
+c = a / 10;/*this fetches double digits*/
+if (c < b)
 {
 putchar(c + '0');
-if (c != 9)
+putchar(b + '0');
+if (a < 89)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 putchar('\n');
