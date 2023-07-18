@@ -4,8 +4,8 @@
  * @a: parameter used to collect number
  * Return - always o.
 */
-int print_last_digit(int)
+int print_last_digit(int a)
 {
-int a;
-_putchar ("%d" + a % 10);
+int b = a % 10;
+_putchar ("%d" + b);
 }
