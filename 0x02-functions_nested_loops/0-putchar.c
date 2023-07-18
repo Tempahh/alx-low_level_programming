@@ -2,7 +2,7 @@
 /**
  * main - entry point
  * Description- write a program to print out _putchar
- * Return -  Always (sucess)
+ * Return -  0 Always (sucess)
 */
 int main(void)
 {
