@@ -6,18 +6,7 @@
 */
 int print_last_digit(int a)
 {
-int b;
-if ( a < 0)
-{
-b = -1 * (b % 10);
-_putchar(a + '0');
-}
-else
-{
-int b;
-b = a % 10;
-_putchar (b + '0');
-return (b);
-}
-return (0);
+int b = a % 10;
+_putchar ("%d" + b);
+_putchar ("%d" + b);
 }
