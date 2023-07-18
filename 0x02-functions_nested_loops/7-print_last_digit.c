@@ -18,4 +18,5 @@ b = a % 10;
 _putchar (b + '0');
 return (b);
 }
+return (0);
 }
