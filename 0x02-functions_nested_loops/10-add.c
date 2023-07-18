@@ -4,7 +4,7 @@
  * @a: first operand
  * @b: second operand
  * Description - adds two numbers
- * Return- return sum of a and b 
+ * Return - return sum of a and b
 */
 int add(int a, int b)
 {
