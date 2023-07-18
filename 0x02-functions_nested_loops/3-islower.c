@@ -5,7 +5,7 @@
  * islower - checks for lower case letters
  * Description- this program aims to find lower case haracters
 */
-void islower(void)
+int islower(int c)
 {
 char a;
 if(a = 'a' && a <= 'z')
