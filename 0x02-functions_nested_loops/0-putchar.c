@@ -2,7 +2,7 @@
 /**
  * main - entry point
  * Description- write a program to print out _putchar
- * return -  0 shows program sucess
+ * Return -  0 shows program sucess
 */
 int main(void)
 {
