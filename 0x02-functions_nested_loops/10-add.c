@@ -3,9 +3,10 @@
  * add - sums up 2 integer values
  * @a: first operand
  * @b: second operand
- * return - return value of the sum
+ * Description - adds two numbers
+ * return: always 0
 */
-int add(int a, int b)
+int add (int a, int b)
 {
-return(a + b);
+return (a + b);
 }
