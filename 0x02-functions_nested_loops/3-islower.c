@@ -7,8 +7,8 @@
 */
 int islower(int c)
 {
-char a;
-if(a = 'a' && a <= 'z')
+int c;
+if (c = 'a' && c <= 'z')
 {
 return (1);
 }
