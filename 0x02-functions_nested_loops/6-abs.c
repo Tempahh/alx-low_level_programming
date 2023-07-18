@@ -6,5 +6,12 @@
 */
 int _abs(int a)
 {
-_putchar("%d" + a);
+if (a <  0)
+{
+return (a * -1);
+}
+else
+{
+return (a);
+}
 }
