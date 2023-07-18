@@ -4,7 +4,7 @@
 /**
  * _islower - checks for lower case letters
  * Description- this program aims to find lower case haracters
- * c- parameter for collecting argument
+ * @c- collecting argument
  * Return: Always 0.
 */
 int _islower(int c)
