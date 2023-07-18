@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * islower - checks for lower case letters
+ * _islower - checks for lower case letters
  * Description- this program aims to find lower case haracters
+ * c- parameter for collecting argument
+ * Return: Always 0.
 */
 int _islower(int c)
 {
