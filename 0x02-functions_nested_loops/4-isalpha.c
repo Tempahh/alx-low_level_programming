@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * _isalpha - checks for alphabets
- * @c- collecting argument
+ * @parameter c- collecting argument
  * Description- this program aims to find alphabets
  * Return: Always 0.
 */
