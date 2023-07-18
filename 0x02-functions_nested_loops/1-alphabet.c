@@ -1,11 +1,10 @@
 #include "main.h"
 /**
- * main - entry point
+ * print_alphabet - entry point
  * Description- prints the alphabets in lower case
  * Return: Always 0
 */
 void print_alphabet(void)
-/*function to print alphabet a - z*/
 {
 int i;
 for (i = 'a'; i <= 'z'; i++)
