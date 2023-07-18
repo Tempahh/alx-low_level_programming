@@ -7,6 +7,6 @@
 int print_last_digit(int a)
 {
 int b = a % 10;
-return (b);
+return (b * 2);
 return (b);
 }
