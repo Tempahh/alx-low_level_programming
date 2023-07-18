@@ -5,6 +5,7 @@
  * Return: Always 0
 */
 void print_alphabet(void)
+/*function to print alphabet a - z*/
 {
 int i;
 for (i = 'a'; i <= 'z'; i++)
