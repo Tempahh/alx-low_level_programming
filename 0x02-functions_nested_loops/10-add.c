@@ -4,9 +4,9 @@
  * @a: first operand
  * @b: second operand
  * Description - adds two numbers
- * return: always 0
+ * Return- return sum of a and b 
 */
-int add (int a, int b)
+int add(int a, int b)
 {
 return (a + b);
 }
