@@ -4,12 +4,12 @@
  * Description- prints the alphabet in lowwercase 10 times
  * Return: Always 0.
 */
-int main(void)
+void print_alphabet_x10(void)
 {
-int a;
+int a = 0;
 while (a < 10)
 {
-int i = 'a';
+char i = 'a';
 while (i <= 'z')
 {
 _putchar(i);
