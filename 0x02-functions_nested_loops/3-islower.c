@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
  * _islower - checks for lower case letters
+ *@c- collecting argument
  * Description- this program aims to find lower case haracters
- * @c- collecting argument
  * Return: Always 0.
 */
 int _islower(int c)
