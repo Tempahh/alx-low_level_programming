@@ -3,7 +3,7 @@
  * _isdigit - entry point
  * Description - checks for characters between 0 and 9
  * @c: collects arguments for the function
- * Return - 1 & 0 
+ * Return: 1 & 0
 */
 int _isdigit(int c)
 {
