@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_lines - prints lines
+ * print_line - prints lines
  * @n: parameter for collecting arguments
  * Description:  draws a straight line in the terminal
  * Return: Always 0.
