@@ -19,7 +19,6 @@ else if (a % 3 == 0)
 printf("Fizz ");
 continue;
 }
-
 else
 {
 if (a % 5 == 0)
@@ -29,6 +28,6 @@ printf("Buzz ");
 }
 printf("%d ", a);
 }
-printf("\n");
+printf("Buzz\n");
 return (0);
 }
