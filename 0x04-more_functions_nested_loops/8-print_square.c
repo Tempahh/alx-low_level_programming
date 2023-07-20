@@ -1,10 +1,12 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * print_square- prints #
  * @size: parameter to collect args
  * Return: Always 0.
 */
-void print_square(int size)
+int main(int size)
 {
 int a = 0;
 while (a < size)
@@ -14,13 +16,13 @@ while (b > a)
 {
 if (size == 0 || size < 0)
 {
-_putchar('\n');
+printf("%d", 2);
 break;
 }
-_putchar('#');
+printf("%d", 2);
 b++;
 }
-_putchar('\n');
+printf("%d", 2);
 a++;
 }    
 }
