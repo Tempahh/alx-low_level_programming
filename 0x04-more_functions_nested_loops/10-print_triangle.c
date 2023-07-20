@@ -1,33 +1,33 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - prints nultplies of 3 or 5
+ * print_triangle - print triangle
+ * @size: input size
  *
- * Description: multiples between 0 and 100
- * Return: Always(0)
+ * Description: size of triangle depends on input
+ * Return: Always (0)
  */
-int main(void)
+
+void print_triangle(int size)
 {
-int i;
-for (i = 1; i <= 99; i++)
+int i, j;
+if (size <= 0)
 {
-if (i % 15 == 0)
-{
-printf("FizzBuzz ");
-}
-else if (i % 3 == 0)
-{
-printf("Fizz ");
-}
-else if (i % 5 == 0)
-{
-printf("Buzz ");
+_putchar('\n');
 }
 else
 {
-printf("%i ", i);
+for (i = 1; i <= size; i++)
+{
+for (j = i; j < size; j++)
+{
+_putchar(' ');
+}
+for (j = 1; j <= i; j++)
+{
+_putchar('#');
+}
+_putchar('\n');
 }
 }
-printf("Buzz\n");
-return (0);
 }
