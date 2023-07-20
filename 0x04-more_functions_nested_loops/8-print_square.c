@@ -1,28 +1,27 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
- * print_square- prints #
- * @size: parameter to collect args
- * Return: Always 0.
-*/
-int main(int size)
+ * print_square - print square
+ * @size: input size
+ *
+ * Description: prints a square
+ * Return: Always (0)
+ */
+void print_square(int size)
 {
-int a = 0;
-while (a < size)
+int i, j;
+if (size <= 0)
 {
-int b = 0;
-while (b > a)
-{
-if (size == 0 || size < 0)
-{
-printf("%d", 2);
-break;
+_putchar('\n');
 }
-printf("%d", 2);
-b++;
+else
+{
+for (i = 0; i < size; i++)
+{
+for (j = 0; j < size; j++)
+{
+_putchar('#');
 }
-printf("%d", 2);
-a++;
-}    
+_putchar('\n');
+}
+}
 }
