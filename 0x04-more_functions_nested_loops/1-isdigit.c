@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  * isdigit - entry point
  * Description - checks for characters between 0 and 9
@@ -8,10 +7,8 @@
 */
 int isdigit(int c)
 {
-    if (c < 10)
-    {
-        return (1);
-    }
-    else
-    return (0);
+if ((c >= 0) && (c < 10))
+return (1);
+else
+return (0);
 }
