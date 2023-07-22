@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main- main block
- * Description: prints the alphabet in lowercase, then UPPERCASE followed by a new line.
+ * Description: prints in lowercase, then UPPERCASE followed by a new line.
  * Return: 0
  */
 int main(void)
