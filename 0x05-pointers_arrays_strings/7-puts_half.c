@@ -20,7 +20,7 @@ b++;
 else if (a % 2 != 0)
 {
 c = (a - 1) / 2;
-while (str[c] < c - 1)
+while (str[c] < a - 1)
 {
 _putchar(str[c + 1]);
 c++;
