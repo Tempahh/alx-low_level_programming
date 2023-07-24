@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <string.h>
 /**
  * puts_half - prints the last half
  * @str: collects arguments
