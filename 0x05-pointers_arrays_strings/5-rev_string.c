@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * rev_string - reverses strings
  * @s: collects arguments
@@ -6,16 +7,20 @@
 */
 void rev_string(char *s)
 {
-int b = 0;
+char *t = s;
+char n [460];
+short a = 0;
 while (*s != '\0')
 {
+n[a] = *s;
 s++;
-b++;
+a++;
 }
-while (b > 0)
+a = 0;
+while (s > t)
 {
-s--;
-_putchar(*s);
-b--;
+    s--;
+    *s = n[a];
+    a++;
 }
 }
