@@ -24,7 +24,7 @@ while (str[c] != '\0')
 {
 if (str[c] < a - 1)
 {
-_putchar(str[c]);
+_putchar(str[c + 1]);
 c++;
 }
 }
