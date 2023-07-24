@@ -22,7 +22,7 @@ else if (a % 2 != 0)
 c = (a - 1) / 2;
 while (str[c] != '\0')
 {
-_putchar(str[c - 1]);
+_putchar(str[--c]);
 c++;
 }
 }
