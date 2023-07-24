@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * puts_half - prints the last half
  * @str: collects arguments
@@ -6,7 +7,7 @@
 */
 void puts_half(char *str)
 {
-int a = _strlen(str), b;
+int a = strlen(str), b;
 if (a % 2 == 0)
 {
 b = a / 2;
