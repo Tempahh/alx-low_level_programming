@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _puts - prints strings in reverse
+ * prints_rev - prints strings in reverse
  * @str: parameter to collect argument
  * Return: Always 0.
 */
-void _puts(char *str)
+void print_rev(char *str)
 {
 int b = 0;
 while (*str != '\0')
