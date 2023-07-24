@@ -20,10 +20,13 @@ b++;
 else if (a % 2 != 0)
 {
 c = (a - 1) / 2;
-while (str[c] < a - 1)
+while (str[c] != '\0')
 {
-_putchar(str[c + 1]);
+if (str[c] < a - 1)
+{
+_putchar(str[c]);
 c++;
+}
 }
 }
 _putchar('\n');
