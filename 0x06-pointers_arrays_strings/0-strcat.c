@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - concatenates two strings
+ * *_strcat - concatenates two strings
  * @dest: param to collect arg
  * @src: param to collect arg
  * Return: Always 0.
