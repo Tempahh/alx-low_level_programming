@@ -1,5 +1,4 @@
 #include "main.h"
-#include "stdio.h"
 /**
  * string_toupper - lower to upper
  * @s: pointer to char params
