@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *cap_string - this is awesome
+ * *cap_string -  capitalize the words on a string
  * @s: pointer to char params
  *
  * Return: *s
