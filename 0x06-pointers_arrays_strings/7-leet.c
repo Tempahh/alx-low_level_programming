@@ -4,19 +4,26 @@
  * @c: String
  * Return: string that is encoded
  */
-char *leet(char *a)
+char *leet(char *c)
 {
-char *c = a;
-char arr1[] = {'A', 'E', 'O', 'T', 'L'};
-char arr2[] = {4, 3, 0, 7, 1};
-while (*a)
-{
-for (int i = 0; i < sizeof(arr1)/sizeof(char); i++)
-{
-if (*a == arr1[i] || *a == arr1[i] + 32)
-*a = 48 + arr2[i];
-}
-a++;
-}
-return (c);
+	char *cp = c;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
+	unsigned int i;
+
+	while (*c)
+	{
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		{
+			/*32 is the difference between lower case letters and apper case letters*/
+			if (*c == key[i] || *c == key[i] + 32)
+			{
+				*c = 48 + value[i];
+			}
+		}
+		c++;
+	}
+
+	return (cp);
+
 }
