@@ -23,5 +23,5 @@ if (accept[b] == '\0')
 break;
 a++;
 }
-return(c);
+return (c);
 }
