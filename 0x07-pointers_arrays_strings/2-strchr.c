@@ -11,7 +11,7 @@ char *p;
 while (*s != '\0')
 {
 if (*s == c)
-*p = *s;
+p = *s;
 else
 return (NULL);
 }
