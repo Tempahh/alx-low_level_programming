@@ -11,7 +11,8 @@ while (*s != '\0')
 {
 if (*s == c)
 return (s);
-s++;
-}
+else
 return (NULL);
+}
+return (s);
 }
