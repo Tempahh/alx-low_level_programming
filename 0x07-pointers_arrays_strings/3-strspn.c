@@ -19,6 +19,8 @@ break;
 }
 b++;
 }
+if (accept[b] == '\0')
+break;
 a++;
 }
 return(c);
