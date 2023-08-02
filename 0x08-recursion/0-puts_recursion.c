@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 *_puts_recursion - function to print string
 *@s: pointer reading the argument passed to the function
@@ -12,4 +13,3 @@ return;
 printf('*s');
 _puts_recursion(s++);
 }
-
