@@ -10,8 +10,8 @@
 
 int		ft_atoi(const char *str)
 {
-	int		n;
-	int		sign;
+	int	n;
+	int	sign;
 
 	n = 0;
 	while (*str == ' ' || *str == '\t' || *str == '\v' || *str == '\r' ||
