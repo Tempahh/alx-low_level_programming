@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define UNUSED(x) (void)(x)
+#include<stdlib.h>
 
 /**
  * ft_atoi - function
@@ -25,7 +25,11 @@ int		ft_atoi(const char *str)
 		if (*str >= '0' && *str <= '9')
 			n = n * 10 + (*str - '0');
 		else
-			break;
+		{
+			printf("Error\n");
+			exit(EXIT_SUCCESS);
+			/*break*/
+		}
 		str++;
 	}
 	return (n * sign);
@@ -42,13 +46,19 @@ int		ft_atoi(const char *str)
 
 int main(int argc, char **argv)
 {
-	UNUSED(argc);
-	if (argc != 3)
+	int i, som = 0, a;
+
+	if (argc == 1)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (0);
 	}
-	printf("%d\n", ft_atoi(argv[1]) 
-    + ft_atoi(argv[2]));
+	for (i = 1; i < argc; i++)
+	{
+		a = ft_atoi(argv[i]);
+		if (a >= 0)
+			som = som + a;
+	}
+	printf("%d\n", som);
 	return (0);
 }
