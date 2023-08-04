@@ -48,6 +48,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (0);
 	}
-	printf("%d\n", ft_atoi(argv[1]) * ft_atoi(argv[2]));
+	printf("%d\n", ft_atoi(argv[1]) 
+    + ft_atoi(argv[2]));
 	return (0);
 }
