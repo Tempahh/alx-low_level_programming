@@ -16,7 +16,7 @@ if (new_array != NULL)
 {
 while (str[j])
 {
-new_array[i] = str[j];
+new_array[i] = str[i];
 j++;
 }
 new_array[i] = '\0';
