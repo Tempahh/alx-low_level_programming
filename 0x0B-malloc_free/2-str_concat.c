@@ -9,16 +9,17 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-int c = strlen(s1) + strlen(s2);
-int i = 0, j = 0;
+int i = 0, j = 0, c = 0;
+for(i = 0; s1[i] || s2[i]; i++)
+c++;
 char *new_pointer;
-new_pointer = malloc((c + 1) * sizeof(char));
+new_pointer = malloc(c * sizeof(char));
 if (new_pointer == NULL)
-return NULL;
+return (NULL);
 for (i = 0; s1[i]; i++)
-new_pointer[i] = s1[i];
-for (j = 0; s2[j]; j++)
-new_pointer[i + j] = s2[j];
+new_pointer[j++] = s1[i];
+for (i = 0; s2[i]; i++)
+new_pointer[j++] = s2[i];
 new_pointer[c] = '\0';
 return (new_pointer);
 }
