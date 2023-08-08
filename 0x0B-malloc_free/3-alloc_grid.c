@@ -13,12 +13,12 @@ int **new_array;
 int wid_num, hei_num;
 if(width == 0 || height == 0)
 return (NULL);
-new_array[hei_num] = malloc(height * sizeof(int *));
+new_array = malloc(height * sizeof(int *));
 if (new_array == NULL)
 return (NULL);
 for (hei_num = 0; hei_num < height; hei_num++)
 {
-new_array[hei_num] = malloc(width * sizeof(int *));
+new_array[hei_num] = malloc(width * sizeof(int));
 if (new_array[hei_num] == NULL)
 {
 for (; hei_num > 0; hei_num--)
