@@ -9,6 +9,8 @@ char *_strdup(char *str)
 {
 int i = 0, j = 0;
 char *new_array;
+if (str == NULL)
+return (NULL);
 while (str[i])
 i++;
 new_array = malloc((i + 1) * sizeof(char));
