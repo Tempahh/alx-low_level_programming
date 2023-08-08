@@ -9,7 +9,7 @@ char *_strdup(char *str)
 {
 int i = 0, j = 0;
 char *new_array;
-while (*str != '\0')
+while (str[i])
 i++;
 new_array = malloc((i + 1) * sizeof(char));
 if (new_array != NULL)
