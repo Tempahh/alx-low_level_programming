@@ -14,14 +14,10 @@ return (NULL);
 while (str[i])
 i++;
 new_array = malloc((i + 1) * sizeof(char));
-if (new_array != NULL)
-{
-while (str[j])
-{
+if (new_array == NULL)
+return (NULL);
+for(i = 0; str[i]; i++)
 new_array[i] = str[i];
-j++;
-}
-new_array[i] = '\0';
-}
+new_array[j] = '\0';
 return (new_array);
 }
