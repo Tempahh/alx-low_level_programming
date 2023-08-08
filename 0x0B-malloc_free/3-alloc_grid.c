@@ -21,7 +21,7 @@ for (hei_num = 0; hei_num < height; hei_num++)
 new_array[hei_num] = malloc(width * sizeof(int));
 if (new_array[hei_num] == NULL)
 {
-for (; hei_num > 0; hei_num--)
+for (; hei_num >= 0; hei_num--)
 free(new_array[hei_num]);
 free(new_array);
 return (NULL);
