@@ -9,10 +9,10 @@
 */
 char *str_concat(char *s1, char *s2)
 {
+char *new_pointer;
 int i = 0, j = 0, c = 0;
 for(i = 0; s1[i] || s2[i]; i++)
 c++;
-char *new_pointer;
 new_pointer = malloc(c * sizeof(char));
 if (new_pointer == NULL)
 return (NULL);
