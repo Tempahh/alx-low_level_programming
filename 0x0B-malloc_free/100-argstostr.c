@@ -17,10 +17,10 @@ char *argstostr(int ac, char **av)
 
 	for (; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++, total++)/*checks through a 2D array*/
+		for (j = 0; av[i][j] != '\0'; j++)/*checks through a 2D*/
+			;
 		total++;
 	}
-	total++;
 
 	a = malloc(total * sizeof(char));
 	if (a == NULL)
