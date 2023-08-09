@@ -17,7 +17,7 @@ char *argstostr(int ac, char **av)
 
 	for (; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)/*checks through a 2D*/
+		for (j = 0; av[i][j] != '\0'; j++, total++)/*checks through a 2D*/
 			;
 		total++;
 	}
