@@ -15,7 +15,7 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (i, total; i < ac; i++)
+	for (i = 0, total = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++, total++)/*checks through a 2D array*/
 			;
