@@ -9,15 +9,15 @@
 
 char *argstostr(int ac, char **av)
 {
-	char *a, *retp;
-	int i, j, total;
+	char *a, *new_pointer;
+	int i = 0, j, total = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (i = 0, total = 0; i < ac; i++)
+	for (i, total; i < ac; i++)
 	{
-		for (j = 0; *(*(av + i) + j) != '\0'; j++, total++)
+		for (j = 0; av[i][j] != '\0'; j++, total++)/*checks through a 2D array*/
 			;
 		total++;
 	}
@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 	if (a == NULL)
 		return (NULL);
 
-	retp = a;
+	new_pointer = a;
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
@@ -39,5 +39,5 @@ char *argstostr(int ac, char **av)
 		a++;
 	}
 
-	return (retp);
+	return (new_pointer);
 }
