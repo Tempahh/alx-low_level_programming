@@ -15,7 +15,7 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-for (i = 0; s1[i] || s2[i]; i++)
+for (i = 0; s1[i]; i++)
 c++;
 new_pointer = malloc(sizeof(char) * (c + 1));
 if (!new_pointer)
