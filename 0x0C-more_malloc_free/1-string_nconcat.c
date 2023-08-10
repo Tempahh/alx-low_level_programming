@@ -22,7 +22,7 @@ if (!new_pointer)
 return (NULL);
 for (i = 0; s1[i]; i++)
 new_pointer[j++] = s1[i];
-for (i = 0; s2[i] && i < n; i++)
+for (i = 0; i < n && s2[i]; i++)
 new_pointer[j++] = s2[i];
 new_pointer[j] = '\0';
 return (new_pointer);
