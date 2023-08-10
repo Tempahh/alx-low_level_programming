@@ -7,8 +7,8 @@
 */
 void *malloc_checked(unsigned int b)
 {
-    unsigned int *pointer = malloc(b);
-    if(pointer == NULL)
-        return (98);
-    return (pointer);
+unsigned int *pointer = malloc(b);
+if(pointer == NULL)
+return (98);
+return (pointer);
 }
