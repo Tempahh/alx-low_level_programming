@@ -1,19 +1,29 @@
 #include <stdlib.h>
-/***/
+/**
+ * _calloc - function to allocate memory for a new array
+ * @nmemb: function parameter
+ * @size: function parameter
+ * Return: returns new pointer
+*/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    if (nmemb == 0 || size == 0)
-        return NULL;
+	void *ptr;
+	unsigned int i;
+	char *char_ptr;
+	if (nmemb == 0 || size == 0)
+		return NULL;
 
-    unsigned int total_size = nmemb * size;
-    void *ptr = malloc(total_size);
+	unsigned int total_size = nmemb * size;
 
-    if (ptr == NULL)
-        return NULL;
+	void *ptr = malloc(total_size);
 
-    char *char_ptr = ptr;
-    for (unsigned int i = 0; i < total_size; i++)
-        char_ptr[i] = 0;
+	if (!ptr)
+		return (NULL);
 
-    return ptr;
+	char_ptr = ptr;
+    
+	for (i = 0; i < total_size; i++)
+		char_ptr[i] = '\0';
+
+	return (ptr);
 }
