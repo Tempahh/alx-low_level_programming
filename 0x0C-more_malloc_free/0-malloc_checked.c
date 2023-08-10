@@ -7,10 +7,8 @@
 */
 void *malloc_checked(unsigned int b)
 {
-void *pointer = malloc(b);
-if (!pointer)
-{
-exit(98);
-}
-return (pointer);
+	void *pointer = malloc(b);
+	if (!pointer)
+		exit(98);
+	return (pointer);
 }
