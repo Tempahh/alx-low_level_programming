@@ -14,9 +14,9 @@ if (argc != 4)
 printf("Error"), exit (98);
 func = get_op_func(argv[2]);
 if (!func)
-printf("Error \n"), exit (98);
+printf("Error \n"), exit (99);
 i = atoi(argv[1]);
 j = atoi(argv[3]);
-printf("%d \n", func(i, j));
+printf("%i \n", func(i, j));
 return (0);
 }
