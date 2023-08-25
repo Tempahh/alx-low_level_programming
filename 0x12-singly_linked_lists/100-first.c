@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * my_setup - Print statement within this function before exe main function.
+ * before_main - Print statement within this function before exe main function.
  */
-
-void my_setup() {
-    // This function will run before main
-    printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+void __attribute__((constructor)) before_main(void)
+{
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }

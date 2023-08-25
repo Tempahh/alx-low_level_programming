@@ -1,4 +1,24 @@
+#include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
+#include <string.h>
+
+/**
+* _strlen_recursion - function
+*
+* @s: the chaine
+* Return: Always 0.
+*/
+
+int _strlen_recursion(const char *s)
+{
+
+	if (*s == '\0')
+		return (0);
+	else
+		return (1 + _strlen_recursion(s + 1));
+}
+
 /**
  * add_node_end - a function ...
  * @head: the list
@@ -7,37 +27,25 @@
  * Return: 1 or 0
  */
 
-
 list_t *add_node_end(list_t **head, const char *str)
 {
-    list_t *new = malloc(sizeof(list_t));
-    list_t *pointer = *head;
+	list_t *new, *ptr = *head;
 
-    if (new == NULL)
-        return NULL;
-    
-    new->str = strdup(str);
-    new->len = strlen(str);
-    new->next = NULL;
+	new =  malloc(sizeof(list_t));
+	if (new == NULL)
+		return (NULL);
 
-    if (pointer == NULL)
-    {
-        *head = new;
-        return (*head);
-    }
-    while (pointer->next != NULL)
-    {
-        pointer = pointer->next;
-    }
-    pointer->next = new;
-    return (new);
-}
+	new->str = strdup(str);
+	new->len = _strlen_recursion(str);
+	new->next = NULL;
 
-void print_list(const list_t *h)
-{
-    while (h != NULL)
-    {
-        printf("[%d] %s\n",h->len, h->str);
-        h = h->next;
-    }
+	if (ptr == NULL)
+	{
+		*head = new;
+		return (*head);
+	}
+	while (ptr->next != NULL)
+		ptr = ptr->next;
+	ptr->next = new;
+	return (new);
 }
