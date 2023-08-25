@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_list - prints the elements of a singly linked list
  * @h: pointer to the linked list
