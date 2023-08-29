@@ -4,19 +4,19 @@
  * @h: pointer used to navigate through the nodes
  * Return: returns the count of nodes
 */
-
 size_t print_listint(const listint_t *h)
 {
-	size_t count = 0;
+	const listint_t *p;
+	int count = 0;
 
-	while (h)
+	if (h == NULL)
+		return (0);
+	p = h;
+	while (p != NULL)
 	{
-		if (h)
-			{
-			printf("%d \n", h->n);
-			}
+		printf("%d\n", p->n);
+		p = p->next;
 		count++;
-		h = h->next;
 	}
 	return (count);
 }
